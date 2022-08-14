@@ -20,8 +20,8 @@ namespace ManyToMany
         }
 
         // DbSet<> of each entity class, including the association entity
-        public DbSet<Employee> Employees {get; set;}
-        public DbSet<Project> Projects {get; set;}
-        public DbSet<EmployeeProject> EmployeeProjects {get; set;}
+        public DbSet<Employee> Employees {get; set;} = null!;
+        public DbSet<Project> Projects {get; set;} = null!;
+        public DbSet<EmployeeProject> EmployeeProjects {get; set;} = null!;
     }
 }
